@@ -27,9 +27,14 @@
     margin: 0;
 }
 
+html {
+    scroll-padding-top: 80px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     html {
         interpolate-size: allow-keywords;
+        scroll-behavior: smooth;
     }
 }
 
@@ -37,6 +42,9 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: var(--bg-color);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-attachment: fixed;
     font-family: 'Fira Code', monospace;
     overflow-x: clip;
 }
@@ -228,10 +236,24 @@ li {
 
 .skills-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 480px;
 }
+
+.skill-tag {
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    border: 1px solid;
+}
+
+.tag-blue   { color: var(--main-blue);   border-color: rgba(0, 243, 255, 0.35);   background-color: rgba(0, 243, 255, 0.08); }
+.tag-purple { color: var(--main-purple); border-color: rgba(183, 36, 255, 0.35);  background-color: rgba(183, 36, 255, 0.08); }
+.tag-orange { color: var(--main-orange); border-color: rgba(237, 83, 0, 0.35);    background-color: rgba(237, 83, 0, 0.08); }
+.tag-pink   { color: var(--main-pink);   border-color: rgba(255, 0, 208, 0.35);   background-color: rgba(255, 0, 208, 0.08); }
+.tag-green  { color: var(--main-green);  border-color: rgba(49, 255, 135, 0.35);  background-color: rgba(49, 255, 135, 0.08); }
 
 /* ========== SECTION PROJETS ========== */
 .section-projects {
@@ -471,4 +493,43 @@ li {
 
 .btn-send:hover {
     border-color: var(--main-blue);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-link {
+    color: var(--light-gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--main-blue);
+}
+
+.footer-copy {
+    font-size: 0.85rem;
 }

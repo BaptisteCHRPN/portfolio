@@ -18,15 +18,15 @@
                     class="text-gradient"> CHERPIN</span>
             </h1>
             <ul class="nav-links">
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hero">A propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- SECTION HERO -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-profile">
             <img src="./assets/avatar.jpg" alt="Image de profil" class="profile-picture">
             <h2 class="text-gradient">Baptiste CHERPIN</h2>
@@ -44,16 +44,25 @@
             <h2 class="text-gradient section-title">Bonjour !</h2>
             <h3 class="text-gray section-subtitle">Développeur Web Full Stack</h3>
             <div class="skills-list">
-                <p class="text-blue">HTML5 - CSS3 - JavaScript</p>
-                <p class="text-purple">PHP - Symfony - Laravel</p>
-                <p class="text-orange">Git - GitHub - Composer - Vs Code - Linux</p>
-                <p class="text-pink">SQL - NoSQL</p>
+                <span class="skill-tag tag-blue">HTML5</span>
+                <span class="skill-tag tag-blue">CSS3</span>
+                <span class="skill-tag tag-blue">JavaScript</span>
+                <span class="skill-tag tag-purple">PHP</span>
+                <span class="skill-tag tag-purple">Symfony</span>
+                <span class="skill-tag tag-purple">Laravel</span>
+                <span class="skill-tag tag-orange">Git</span>
+                <span class="skill-tag tag-orange">GitHub</span>
+                <span class="skill-tag tag-orange">Composer</span>
+                <span class="skill-tag tag-orange">VS Code</span>
+                <span class="skill-tag tag-orange">Linux</span>
+                <span class="skill-tag tag-green">SQL</span>
+                <span class="skill-tag tag-pink">NoSQL</span>
             </div>
         </article>
     </section>
 
     <!-- PROJETS -->
-    <section class="section section-projects">
+    <section class="section section-projects" id="projets">
         <h2 class="text-gradient section-title fade-in">Projets</h2>
         <div class="projects-list">
             <article class="card project-card fade-in">
@@ -92,7 +101,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="section section-contact">
+    <section class="section section-contact" id="contact">
         <h2 class="text-gradient section-title fade-in">Contact</h2>
         <div class="card contact-card fade-in">
             <form class="contact-form" action="">
@@ -115,6 +124,18 @@
             </form>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="text-gradient footer-name">Baptiste CHERPIN</span>
+            <div class="footer-links">
+                <a href="https://github.com/BaptisteCHRPN" class="footer-link" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/baptiste-cherpin-981728133/" class="footer-link" target="_blank">LinkedIn</a>
+            </div>
+            <span class="text-gray footer-copy">© 2026 Baptiste CHERPIN</span>
+        </div>
+    </footer>
 
     <script src="./js/scroll.js"></script>
 </body>
