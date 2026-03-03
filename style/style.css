@@ -264,6 +264,17 @@ li {
 }
 
 /* ========== SECTION HERO ========== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero {
     margin-top: 1rem;
     display: flex;
@@ -278,6 +289,7 @@ li {
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    animation: fadeInUp 0.7s ease-out both;
 }
 
 .profile-picture {
@@ -293,6 +305,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeInUp 0.7s ease-out 0.2s both;
 }
 
 .skills-list {
