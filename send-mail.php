@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $to      = 'cherpinb@gmail.com';
         $subject = "Portfolio - Message de $name";
         $body    = "De : $name <$email>\n\n$message";
-        $headers = "From: noreply@ton-domaine.com\r\nReply-To: $email";
+        $headers = "From: noreply@batdev.fr\r\nReply-To: $email";
 
         mail($to, $subject, $body, $headers);
         header('Location: index.html?sent=1');
