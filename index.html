@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baptiste CHERPIN</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="header-nav">
+        <nav>
+            <h1 class="title-nav">
+                <img src="./assets/avatar.jpg" alt="Image de profil" class="logo-nav">
+                <span class="text-main-blue">#</span> <span class="text-light-gray"> Baptiste</span> <span class="text-gradient"> CHERPIN</span>
+            </h1>
+            <ul class="nav-links-list">
+                <li>
+                    <a href="#" class="nav-link">A propos</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Projets</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION HERO -->
+    <section class="hero">
+        <div class="profil-hero">
+            <img src="./assets/avatar.jpg" alt="Image de profil" class="profil-picture">
+            <h2  class="text-gradient">Baptiste CHERPIN</h2>
+            <span class="location text-green">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                    <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                    <circle cx="12" cy="10" r="3" />
+                </svg>
+                Paris, France
+            </span>
+        </div>
+        <article class="skills">
+            <h2 class="text-gradient hero-title-h2">Bonjour !</h2>
+            <h3 class="text-light-gray hero-title-h3">Développeur Web Full Stack</h3>
+                <div class="skills-item">
+                    <p class="text-main-blue">HTML5 - CSS3 - JavaScript</p>
+                    <p class="text-main-purpl">PHP - Symfony - Laravel</p>
+                    <p class="text-main-orange">Git - GitHub - Composer - Vs Code - Linux</p>
+                    <p class="text-main-pink">SQL - NoSQL</p>
+                </div>
+        </article>
+    </section>
+
+    <!-- PROJETS -->
+    <section>
+        <h2>Projets</h2>
+        <article>
+            <div>
+                <div>
+                    <img src="./assets/logo.svg" alt="">
+                    <span>ARKALIB</span>
+                </div>
+                <div>
+                    <p>Projet personnel</p>
+                    <p>• Développement en cours</p>
+                    <p>Stack technique</p>
+                    <p>Backend : PHP 8.2, Symfony 7</p>
+                    <p>Templating : Twig</p>
+                    <p>Base de données : MySQL 9.1.0</p>
+                    <p>ORM : Doctrine</p>
+                    <p>Frontend : Bootstrap / CSS</p>
+                    <p>personnalisé / JavaScript</p>
+                </div>
+            </div>
+            <div>
+                <h3>Développement en cours d'un projet Symfony 7</h3>
+                <p>Application de gestion et suivis de budget multi tenants orienté petites associations.</p>
+                <h3>Fonctionnalités principales</h3>
+                <ul>
+                    <li>Inscription / Authentification</li>
+                </ul>
+                <ul>
+                    <li>Système d’invitation par email</li>
+                </ul>
+                <ul>
+                    <li>Création d’associations</li>
+                </ul>
+                <ul>
+                    <li>Création de budget</li>
+                </ul>
+                <ul>
+                    <li>Création de recettes et de dépenses</li>
+                </ul>
+                <ul>
+                    <li>Suivis des recettes et des dépenses</li>
+                </ul>
+                <ul>
+                    <li>Ajout de pièce jointe, de logo d’association, de photo de profile</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <!-- CONTACT -->
+     <section>
+        <h2>Contact</h2>
+        <div>
+            <form action="">
+                <label for="name">Nom</label>
+                <input type="text" name="name" id="name" placeholder="Votre nom">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Votre Email">
+
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message" placeholder="Votre message ...">
+
+                <input type="submit" name="send" id="send">
+            </form>
+        </div>
+     </section>
+
+</body>
+
+</html>
