@@ -1,5 +1,13 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // simple anti-bot honeypot field
+    $honeypot = trim($_POST['website'] ?? '');
+    if ($honeypot !== '') {
+        // probable bot, silently ignore
+        header('Location: index.html?error=1');
+        exit;
+    }
+
     $name    = htmlspecialchars(trim($_POST['name'] ?? ''));
     $email   = htmlspecialchars(trim($_POST['email'] ?? ''));
     $message = htmlspecialchars(trim($_POST['message'] ?? ''));

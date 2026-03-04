@@ -1,5 +1,6 @@
 /* ========== IMPORT FIRA CODE FONT ========== */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+/* Font will be loaded dynamically after user consent to cookies (see RGPD banner).
+   Keeping the family declaration but the import is injected via JavaScript when accepted. */
 
 
 /* ========== DESIGN SYSTEM ========== */
@@ -14,6 +15,36 @@
     --main-pink: rgba(255, 0, 208, 1);
     --card-bg: rgba(255, 255, 255, 0.1);
     --border-card: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== COOKIE BANNER ========== */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29,29,29,0.95);
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    z-index: 1000;
+}
+.cookie-banner p {
+    margin: 0 0.5rem 0.5rem 0;
+    flex: 1 1 300px;
+}
+.cookie-banner button {
+    background: var(--main-blue);
+    border: none;
+    color: dark;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 /* ========== RESET ========== */
@@ -516,6 +547,19 @@ li {
     font-weight: 600;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+/* hide honeypot field visually but keep it in markup */
+.honeypot-group {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.honeypot-group input {
+    pointer-events: none;
 }
 
 .form-feedback.success {
